@@ -1,5 +1,5 @@
 ## Hi there 👋
-I’m a university student and intrested to learn new things
+I’m a university student and intrested in learning new things
 - and I’m currently learning game developing
 - 📫 How to reach me: @its_Efi_Erfan(telegram)
 <!--
