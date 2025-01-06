@@ -3,7 +3,7 @@ I’m a university student and intrested in learning new things
 - and I’m currently learning game developing
 - 📫 How to reach me: @its_Efi_Erfan(telegram)
 - This is my itch account wich i upload some of my games:
-[itch account](https://erfan-khodami.itch.io/)
+[itch account](https://erfan-khodami.itch.io/)\n
 -this is my Instagram account you can follow:
 [instagram account](https://www.instagram.com/efi_animation_studio?igsh=MTNpcmJyZGh1bXg2eA==)
 
