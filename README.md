@@ -26,7 +26,7 @@
 ## <h2 align="center" style="color: #33FFEC; text-shadow: 2px 2px 0px #FF5733, 4px 4px 0px #1F222E;">🕹️ About Me</h2>
 
 <div align="center">
-📖 Studying Computer Engineering in University of Isfahan
+📖 Studying Computer Engineering in University of Isfahan<br>
 🎮 Game developer passionate about crafting <strong>hyper-casual</strong> and <strong>retro-style games</strong><br>
 🧠 3 years of Unity (C#) experience | 2 years in 3D animation with Blender<br>
 💡 Love building games in creative small teams<br>
