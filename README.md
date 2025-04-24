@@ -3,7 +3,7 @@
   
   <!-- Animated Title with Color Cycling -->
   <h1>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=FF5733¢er=true&vCenter=true&width=500&lines=Hi%2C+I'm+Erfan%F0%9F%91%BE;a+game+developer;and+lover+to+learn+new+things!" alt="Animated Title" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=FF5733¢er=true&vCenter=true&width=500&lines=%F0%9F%8E%AE+Welcome+to+My+GitHub+%F0%9F%8E%AE;%F0%9F%8E%AE+Erfan's+Dev+Space+%F0%9F%8E%AE;%F0%9F%8E%AE+Game+Dev+Hub+%F0%9F%8E%AE;Hi%2C+I'm+Erfan%F0%9F%91%BE;a+game+developer;and+lover+to+learn+new+things!" alt="Animated Title" />
   </h1>
 
   <!-- Pixel Avatar -->
