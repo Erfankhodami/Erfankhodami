@@ -3,7 +3,7 @@
   
   <!-- Animated Title with Color Cycling -->
   <h1>
-    <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=30&duration=4000&pause=1000&color=FF007A&center=true&vCenter=true&width=500&lines=%F0%9F%8E%AE+Hi%2C+I'm+Erfan+%F0%9F%8E%AE;%F0%9F%8E%AE+A+Game+Developer+%F0%9F%8E%AE;%F0%9F%8E%AE+Lover+to+Learn+New+Things!+%F0%9F%8E%AE" alt="Animated Title" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=FF5733&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Erfan%F0%9F%91%BE;a+game+developer;and+lover+to+learn+new+things!" alt="Animated Title" />
   </h1>
 
   <!-- Pixel Avatar -->
@@ -11,7 +11,7 @@
   
   <!-- Animated Role Text -->
   <p>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=500&lines=Hi!+I'm+Erfan+%F0%9F%91%BE;Game+Developer;Unity+Programmer;3D+Artist" alt="Role Animation" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=33FFEC&center=true&vCenter=true&width=500&lines=Hi!+I'm+Erfan+%F0%9F%91%BE;Game+Developer;Unity+Programmer;3D+Artist" alt="Role Animation" />
   </p>
 </div>
 
@@ -23,21 +23,21 @@
   
   <!-- Repository Cards with Glow Effect -->
   <a href="https://github.com/Erfankhodami/YourGameRepo1">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo1&theme=dark&bg_color=1F222E&title_color=FF007A&icon_color=FFD700" alt="Repo1" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo1&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Repo1" />
   </a>
   
   <a href="https://github.com/Erfankhodami/YourGameRepo2">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo2&theme=dark&bg_color=1F222E&title_color=FF007A&icon_color=FFD700" alt="Repo2" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo2&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Repo2" />
   </a>
   
   <br>
   
   <a href="https://github.com/Erfankhodami/YourGameRepo3">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo3&theme=dark&bg_color=1F222E&title_color=FF007A&icon_color=FFD700" alt="Repo3" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo3&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Repo3" />
   </a>
   
   <a href="https://github.com/Erfankhodami/YourGameRepo4">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo4&theme=dark&bg_color=1F222E&title_color=FF007A&icon_color=FFD700" alt="Repo4" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo4&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Repo4" />
   </a>
 </div>
 
@@ -57,25 +57,18 @@
 <div align="center">
   
   <!-- Animated Skill Badges -->
-  <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white&labelColor=black&color=FF007A" alt="Unity" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white&labelColor=black&color=FFD700" alt="C#" />
-  <img src="https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white&labelColor=black&color=00CED1" alt="Blender" />
+  <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white&labelColor=black&color=FF5733" alt="Unity" />
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white&labelColor=black&color=33FFEC" alt="C#" />
+  <img src="https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white&labelColor=black&color=FF5733" alt="Blender" />
   <br>
-  <img src="https://img.shields.io/badge/Adobe%20Premiere-9999FF?style=for-the-badge&logo=adobe-premiere-pro&logoColor=white&labelColor=black&color=FF4500" alt="Premiere" />
-  <img src="https://img.shields.io/badge/Substance%20Painter-696969?style=for-the-badge&logo=substance-painter&logoColor=white&labelColor=black&color=FF69B4" alt="Substance" />
-  <img src="https://img.shields.io/badge/SolidWorks-0076D6?style=for-the-badge&logo=dassault-systemes&logoColor=white&labelColor=black&color=7B68EE" alt="SolidWorks" />
+  <img src="https://img.shields.io/badge/Adobe%20Premiere-9999FF?style=for-the-badge&logo=adobe-premiere-pro&logoColor=white&labelColor=black&color=33FFEC" alt="Premiere" />
+  <img src="https://img.shields.io/badge/Substance%20Painter-696969?style=for-the-badge&logo=substance-painter&logoColor=white&labelColor=black&color=FF5733" alt="Substance" />
+  <img src="https://img.shields.io/badge/SolidWorks-0076D6?style=for-the-badge&logo=dassault-systemes&logoColor=white&labelColor=black&color=33FFEC" alt="SolidWorks" />
 </div>
 
 <div align="center">
-  
   <!-- Skill Graphs -->
-  <img src="https://progress-bar.dev/90/?title=Unity&width=200&color=FF007A" alt="Unity Skill" />
-  <img src="https://progress-bar.dev/85/?title=C%23&width=200&color=FFD700" alt="C# Skill" />
-  <img src="https://progress-bar.dev/80/?title=Blender&width=200&color=00CED1" alt="Blender Skill" />
-  <br>
-  <img src="https://progress-bar.dev/70/?title=Adobe+Premiere&width=200&color=FF4500" alt="Premiere Skill" />
-  <img src="https://progress-bar.dev/75/?title=Substance+Painter&width=200&color=FF69B4" alt="Substance Skill" />
-  <img src="https://progress-bar.dev/65/?title=SolidWorks&width=200&color=7B68EE" alt="SolidWorks Skill" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Erfankhodami&layout=compact&theme=dark&bg_color=1F222E&title_color=FF5733&text_color=33FFEC" alt="Top Languages" />
 </div>
 
 ---
@@ -86,16 +79,16 @@
   
   <!-- Glowing Social Links -->
   <a href="https://www.linkedin.com/in/erfan-khodami-669b9a244">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=black&color=FF007A" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=black&color=FF5733" alt="LinkedIn"/>
   </a>
   <a href="https://erfan-khodami.itch.io/">
-    <img src="https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white&labelColor=black&color=FFD700" alt="Itch.io"/>
+    <img src="https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white&labelColor=black&color=33FFEC" alt="Itch.io"/>
   </a>
   <a href="https://www.instagram.com/efi_animation_studio">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=black&color=00CED1" alt="Instagram"/>
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=black&color=FF5733" alt="Instagram"/>
   </a>
   <a href="https://t.me/Thisis_Efi_Erfan">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=black&color=FF4500" alt="Telegram"/>
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=black&color=33FFEC" alt="Telegram"/>
   </a>
 </div>
 
