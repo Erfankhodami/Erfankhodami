@@ -48,7 +48,7 @@
 
 ---
 
-## <h2 align="center" style="color: #33FFEC; text-shadow: 2px 2px 0px #FF5733, 4px 4px 0px #1F222E;">🌐 Contact Me</h2>
+## <h2 align="center" style="color: #00F731; text-shadow: 2px 2px 0px #FF5733, 4px 4px 0px #1F222E;">🌐 Check These Out!</h2>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/erfan-khodami-669b9a244">
