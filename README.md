@@ -1,6 +1,8 @@
 <div align="center">
-  <!-- Kept the typewriter intro -->
-  <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=18&duration=4000&pause=1000&color=00F731&center=true&vCenter=true&width=500&lines=Hi%2C+Welcome+to+my+github;im+a+game+developer;Unity+programmer;and+3D+artist" alt="Animated Title" />
+  <!-- Centered Main Title with Typewriter Effect -->
+  <h1>
+    <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=18&duration=4000&pause=1000&color=00F731&center=true&vCenter=true&width=500&lines=Hi%2C+Welcome+to+my+github;im+a+game+developer;Unity+programmer;and+3D+artist" alt="Animated Title" />
+  </h1>
   
   <!-- Pixel Avatar -->
   <img src="https://i.ibb.co/FVpxscQ/pixel-avatar.gif" alt="Retro Pixel Avatar" width="150"/>
@@ -23,10 +25,12 @@
 
 ## <h2 align="center" style="color: #33FFEC; text-shadow: 2px 2px 0px #FF5733, 4px 4px 0px #1F222E;">🕹️ About Me</h2>
 
-🎮 Game developer passionate about crafting **hyper-casual** and **retro-style games**  
-🧠 3 years of Unity (C#) experience | 2 years in 3D animation with Blender  
-💡 Love building games in creative small teams  
+<div align="center">
+🎮 Game developer passionate about crafting <strong>hyper-casual</strong> and <strong>retro-style games</strong><br>
+🧠 3 years of Unity (C#) experience | 2 years in 3D animation with Blender<br>
+💡 Love building games in creative small teams<br>
 📚 Always learning, always building!
+</div>
 
 ---
 
@@ -65,16 +69,15 @@
 
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎯 Goals</h2>
 
-🚀 Build and lead a small indie dev team  
-🎮 Release creative games on Itch.io  
+<div align="center">
+🚀 Build and lead a small indie dev team<br>
+🎮 Release creative games on Itch.io<br>
 🌱 Keep learning and improving
+</div>
 
 ---
 
 <div align="center">
   <!-- Retro Banner -->
   <img src="https://i.ibb.co/ZTcy6Qm/retro-game-banner.gif" alt="Retro Banner" width="100%"/>
-  
-  <!-- Snake animation -->
-  ![Snake Game](https://github.com/Erfankhodami/Erfankhodami/blob/output/github-contribution-grid-snake.svg)
 </div>
