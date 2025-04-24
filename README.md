@@ -1,6 +1,6 @@
 <h1 align="center">
   <img src="https://i.ibb.co/FVpxscQ/pixel-avatar.gif" width="120px"><br>
-  🕹️ 𝙍𝙀𝙏𝙍𝙊 𝙀𝙍𝙁𝘼𝙉 🕹️
+  🕹️ 𝙀𝙍𝙁𝘼𝙉 🕹️
 </h1>
 
 <p align="center">
