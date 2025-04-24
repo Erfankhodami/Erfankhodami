@@ -3,16 +3,12 @@
   
   <!-- Animated Title with Color Cycling -->
   <h1>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=FF5733&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Erfan%F0%9F%91%BE;a+game+developer;and+lover+to+learn+new+things!" alt="Animated Title" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=FF5733¢er=true&vCenter=true&width=500&lines=Hi%2C+I'm+Erfan%F0%9F%91%BE;a+game+developer;and+lover+to+learn+new+things!" alt="Animated Title" />
   </h1>
 
   <!-- Pixel Avatar -->
   <img src="https://i.ibb.co/FVpxscQ/pixel-avatar.gif" alt="Retro Pixel Avatar" width="150"/>
   
-  <!-- Animated Role Text -->
-  <p>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=33FFEC&center=true&vCenter=true&width=500&lines=Hi!+I'm+Erfan+%F0%9F%91%BE;Game+Developer;Unity+Programmer;3D+Artist" alt="Role Animation" />
-  </p>
 </div>
 
 ---
@@ -22,23 +18,14 @@
 <div align="center">
   
   <!-- Repository Cards with Glow Effect -->
-  <a href="https://github.com/Erfankhodami/YourGameRepo1">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo1&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Repo1" />
+  <a href="https://github.com/Erfankhodami/EcoSynth">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=EcoSynth&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="EcoSynth" />
   </a>
   
-  <a href="https://github.com/Erfankhodami/YourGameRepo2">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo2&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Repo2" />
+  <a href="https://github.com/Erfankhodami/CalmBeforeTheStorm">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=CalmBeforeTheStorm&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="CalmBeforeTheStorm" />
   </a>
   
-  <br>
-  
-  <a href="https://github.com/Erfankhodami/YourGameRepo3">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo3&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Repo3" />
-  </a>
-  
-  <a href="https://github.com/Erfankhodami/YourGameRepo4">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=YourGameRepo4&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Repo4" />
-  </a>
 </div>
 
 ---
