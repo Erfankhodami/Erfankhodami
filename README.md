@@ -10,7 +10,7 @@
 
 ---
 
-## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎮 Featured Repositories</h2>
+## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #00F731;">🎮 Featured Repositories</h2>
 
 <div align="center">
   <a href="https://github.com/Erfankhodami/EcoSynth">
