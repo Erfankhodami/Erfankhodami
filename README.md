@@ -1,7 +1,7 @@
 <div align="center">
   <!-- Centered Main Title with Typewriter Effect -->
   <h1>
-    <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=18&duration=4000&pause=1000&color=00F731&center=true&vCenter=true&width=500&lines=Hi%2C+Welcome+to+my+github+profile;im+a+college+student;a+game+developer;Unity+programmer;and+3D+artist" alt="Animated Title" />
+    <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=18&duration=4000&pause=1000&color=00F731&center=true&vCenter=true&width=500&lines=Welcome+to+my+github+profile;im+a+college+student;a+game+developer;a+Unity+programmer;and+a+3D+artist" alt="Animated Title" />
   </h1>
   
   <!-- Pixel Avatar -->
