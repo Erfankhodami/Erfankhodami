@@ -7,7 +7,7 @@
   <!-- Pixel Avatar -->
   <img src="https://i.ibb.co/FVpxscQ/pixel-avatar.gif" alt="Retro Pixel Avatar" width="150"/>
 </div>
----
+
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎮 Featured Repositories</h2>
 
 <div align="center">
@@ -18,7 +18,7 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=CalmBeforeTheStorm&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="CalmBeforeTheStorm" />
   </a>
 </div>
----
+
 ## <h2 align="center" style="color: #33FFEC; text-shadow: 2px 2px 0px #FF5733, 4px 4px 0px #1F222E;">🕹️ About Me</h2>
 
 <div align="center">
@@ -28,7 +28,7 @@
 💡 Love building games in creative small teams<br>
 📚 Always learning, always building!
 </div>
----
+
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🛠️ Skills</h2>
 
 <div align="center">
@@ -40,7 +40,7 @@
   <img src="https://img.shields.io/badge/Substance%20Painter-696969?style=for-the-badge&logo=substance-painter&logoColor=white" alt="Substance" />
   <img src="https://img.shields.io/badge/SolidWorks-0076D6?style=for-the-badge&logo=dassault-systemes&logoColor=white" alt="SolidWorks" />
 </div>
----
+
 ## <h2 align="center" style="color: #33FFEC; text-shadow: 2px 2px 0px #FF5733, 4px 4px 0px #1F222E;">🌐 Contact Me</h2>
 
 <div align="center">
@@ -57,7 +57,7 @@
     <img src="https://img.shields.io/badge/-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
   </a>
 </div>
----
+
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎯 Goals</h2>
 
 <div align="center">
@@ -65,7 +65,7 @@
 🎮 Release creative games on Itch.io<br>
 🌱 Keep learning and improving
 </div>
----
+
 <div align="center">
   <!-- Retro Banner -->
   <img src="https://i.ibb.co/ZTcy6Qm/retro-game-banner.gif" alt="Retro Banner" width="100%"/>
