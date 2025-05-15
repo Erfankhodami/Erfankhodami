@@ -8,7 +8,6 @@
   <img src="https://i.ibb.co/FVpxscQ/pixel-avatar.gif" alt="Retro Pixel Avatar" width="150"/>
 </div>
 
----
 
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎮 Featured Repositories</h2>
 
