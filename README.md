@@ -24,7 +24,6 @@
 <div align="center">
 📖 Studying Computer Engineering in University of Isfahan<br>
 🎮 Game developer passionate about crafting <strong>hyper-casual</strong> and <strong>retro-style games</strong><br>
-🧠 3 years of Unity (C#) experience | 2 years in 3D animation with Blender<br>
 💡 Love building games in creative small teams<br>
 📚 Always learning, always building!
 </div>
