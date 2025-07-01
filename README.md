@@ -15,7 +15,7 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=EcoSynth&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="EcoSynth" />
   </a>
   <a href="https://github.com/Erfankhodami/Ophelia-sWayHome3D">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=Ophelia-sWayHome3D&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="CalmBeforeTheStorm" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=Ophelia-sWayHome3D&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Ophelia-sWayHome3D" />
   </a>
 </div>
 
