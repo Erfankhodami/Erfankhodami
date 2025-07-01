@@ -10,14 +10,6 @@
 
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎮 Featured Repositories</h2>
 
-<div align="center">
-  <a href="https://github.com/Erfankhodami/EcoSynth">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=EcoSynth&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="EcoSynth" />
-  </a>
-  <a href="https://github.com/Erfankhodami/OpheliasWayHome3D">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Erfankhodami&repo=OpheliasWayHome3D&theme=dark&bg_color=1F222E&title_color=FF5733&icon_color=33FFEC" alt="Ophelia's Way Home" />
-  </a>
-</div>
 
 ## <h2 align="center" style="color: #33FFEC; text-shadow: 2px 2px 0px #FF5733, 4px 4px 0px #1F222E;">🕹️ About Me</h2>
 
