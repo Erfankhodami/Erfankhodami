@@ -5,7 +5,12 @@
   </h1>
   
   <!-- Pixel Avatar -->
- <img src="avatar.png" alt="Pixel Avatar" width="150"/>
+ <div align="center">
+  <!-- Your existing content -->
+  
+  <img src="avatar.png" 
+       alt="Pixel Art" 
+       style="image-rendering: pixelated; width: 150px; height: 150px;">
 </div>
 
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎮 Featured Repositories</h2>
