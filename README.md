@@ -10,7 +10,7 @@
   
   <p align="center">
   <img src="avatar.png" 
-       width="150" 
+       width="200" 
        style="image-rendering: crisp-edges;">
 </p>
 
