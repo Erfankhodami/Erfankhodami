@@ -3,6 +3,10 @@
   <h1>
     <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=18&duration=4000&pause=1000&color=00F731&center=true&vCenter=true&width=500&lines=Welcome+to+my+github+profile!;im+a+college+student;a+game+developer;a+Unity+programmer;and+a+3D+artist" alt="Animated Title" />
   </h1>
+  
+  <!-- Pixel Avatar -->
+  <img src="https://i.ibb.co/FVpxscQ/pixel-avatar.gif" alt="Retro Pixel Avatar" width="150"/>
+</div>
 
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎮 Featured Repositories</h2>
 
