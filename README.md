@@ -8,10 +8,11 @@
  <div align="center">
   <!-- Your existing content -->
   
+  <p align="center">
   <img src="avatar.png" 
-       alt="Pixel Art" 
-       style="image-rendering: pixelated; width: 33px; height: 32px;">
-</div>
+       width="150" 
+       style="image-rendering: crisp-edges;">
+</p>
 
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎮 Featured Repositories</h2>
 
