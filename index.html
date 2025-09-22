@@ -1,62 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Erfan Khodami</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            background: white;
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-        }
-        h1 {
-            color: #2d3748;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .social-links {
-            margin-top: 2rem;
-        }
-        .social-link {
-            display: inline-block;
-            margin: 0 10px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
-        .social-link:hover {
-            transform: translateY(-3px);
-        }
-        .linkedin { background-color: #0077B5; }
-        .instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); }
-        .telegram { background-color: #2CA5E0; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Erfan's Dev Portal</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid #00ffcc;
+      white-space: nowrap;
+      animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #00ffcc }
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #00ffcc;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social-button {
+      background-color: transparent;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .social-button:hover {
+      background-color: #00ffcc;
+      color: #0f0f0f;
+      box-shadow: 0 0 10px #00ffcc;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hey there I'm Erfan!</h1>
-        <p>Welcome to my GitHub profile</p>
-        
-        <div class="social-links">
-            <a href="https://linkedin.com/in/erfankhodami" class="social-link linkedin">LinkedIn</a>
-            <a href="https://instagram.com/erfankhodami" class="social-link instagram">Instagram</a>
-            <a href="https://t.me/erfankhodami" class="social-link telegram">Telegram</a>
-        </div>
-    </div>
+
+  <div class="typewriter">Hey, I'm Erfan. Welcome to my website!</div>
+
+  <img src="your-photo.jpg" alt="Erfan's Photo" class="profile-pic">
+
+  <div class="button-container">
+    <a href="https://github.com/yourusername" class="social-button" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/yourusername" class="social-button" target="_blank">LinkedIn</a>
+    <a href="https://instagram.com/yourusername" class="social-button" target="_blank">Instagram</a>
+    <a href="https://t.me/yourusername" class="social-button" target="_blank">Telegram</a>
+  </div>
+
 </body>
 </html>
