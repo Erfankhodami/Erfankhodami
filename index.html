@@ -18,12 +18,14 @@
     }
 
     .typewriter {
-      overflow: hidden;
-      border-right: .15em solid #00ffcc;
-      white-space: nowrap;
-      animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
-      font-size: 1.8em;
-      margin-bottom: 20px;
+    overflow: hidden;
+    border-right: .15em solid #00ffcc;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    display: inline-block; /* Add this line */
+    width: 0; /* Add this line */
     }
 
     @keyframes typing {
