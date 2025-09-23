@@ -15,17 +15,24 @@
       height: 100vh;
       margin: 0;
       overflow: hidden;
+      text-align: center;
+    }
+
+    .typewriter-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
     .typewriter {
-    overflow: hidden;
-    border-right: .15em solid #00ffcc;
-    white-space: nowrap;
-    animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    display: inline-block; /* Add this line */
-    width: 0; /* Add this line */
+      overflow: hidden;
+      border-right: .15em solid #00ffcc;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+      font-size: 1.8em;
+      max-width: max-content; /* This is key */
     }
 
     @keyframes typing {
@@ -74,7 +81,9 @@
 </head>
 <body>
 
-  <div class="typewriter">Hey, I'm Erfan. Welcome to my website!</div>
+  <div class="typewriter-container">
+    <div class="typewriter">Hey, I'm Erfan. Welcome to my website!</div>
+  </div>
 
   <img src="your-photo.jpg" alt="Erfan's Photo" class="profile-pic">
 
