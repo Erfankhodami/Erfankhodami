@@ -32,7 +32,7 @@
       margin: 0 auto;
       animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
       font-size: 1.8em;
-      max-width: max-content; /* This is key */
+      max-width: max-content;
     }
 
     @keyframes typing {
@@ -59,6 +59,7 @@
       gap: 15px;
       flex-wrap: wrap;
       justify-content: center;
+      max-width: 600px;
     }
 
     .social-button {
@@ -70,6 +71,8 @@
       font-weight: bold;
       border-radius: 8px;
       transition: all 0.3s ease;
+      flex: 1;
+      min-width: 120px;
     }
 
     .social-button:hover {
@@ -90,6 +93,7 @@
   <div class="button-container">
     <a href="https://github.com/yourusername" class="social-button" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/yourusername" class="social-button" target="_blank">LinkedIn</a>
+    <a href="https://erfan-khodami.itch.io/" class="social-button" target="_blank">itch.io</a>
     <a href="https://instagram.com/yourusername" class="social-button" target="_blank">Instagram</a>
     <a href="https://t.me/yourusername" class="social-button" target="_blank">Telegram</a>
   </div>
