@@ -16,13 +16,87 @@
       margin: 0;
       overflow: hidden;
       text-align: center;
+      position: relative;
     }
 
+    /* Animated Grid Background */
+    .grid-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        linear-gradient(rgba(0, 255, 204, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 204, 0.1) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: gridMove 20s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes gridMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(50px, 50px); }
+    }
+
+    /* Glitch Effect */
+    .glitch-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .glitch {
+      position: relative;
+      animation: glitch-skew 4s infinite linear alternate-reverse;
+    }
+
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .glitch::before {
+      animation: glitch-1 0.5s infinite linear alternate-reverse;
+      color: #ff00ff;
+      z-index: -1;
+    }
+
+    .glitch::after {
+      animation: glitch-2 0.5s infinite linear alternate-reverse;
+      color: #00ffff;
+      z-index: -2;
+    }
+
+    @keyframes glitch-1 {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    @keyframes glitch-2 {
+      0% { transform: translate(0); }
+      20% { transform: translate(2px, 2px); }
+      40% { transform: translate(2px, -2px); }
+      60% { transform: translate(-2px, 2px); }
+      80% { transform: translate(-2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    /* Enhanced Typewriter */
     .typewriter-container {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      position: relative;
     }
 
     .typewriter {
@@ -33,6 +107,8 @@
       animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
       font-size: 1.8em;
       max-width: max-content;
+      text-shadow: 0 0 10px #00ffcc;
+      position: relative;
     }
 
     @keyframes typing {
@@ -45,47 +121,136 @@
       50% { border-color: #00ffcc }
     }
 
+    /* Holographic Profile Pic */
     .profile-pic {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       border: 3px solid #00ffcc;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       object-fit: cover;
+      position: relative;
+      animation: float 6s ease-in-out infinite;
+      box-shadow: 
+        0 0 20px #00ffcc,
+        inset 0 0 20px rgba(0, 255, 204, 0.3);
+      filter: hue-rotate(0deg);
+      transition: all 0.3s ease;
     }
 
+    .profile-pic:hover {
+      filter: hue-rotate(90deg);
+      box-shadow: 
+        0 0 30px #ff00ff,
+        inset 0 0 30px rgba(255, 0, 255, 0.3);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
+    }
+
+    /* Cyber Buttons */
     .button-container {
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
       justify-content: center;
       max-width: 600px;
+      position: relative;
     }
 
     .social-button {
       background-color: transparent;
       border: 2px solid #00ffcc;
       color: #00ffcc;
-      padding: 10px 20px;
+      padding: 12px 24px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 8px;
       transition: all 0.3s ease;
       flex: 1;
       min-width: 120px;
+      position: relative;
+      overflow: hidden;
+      text-shadow: 0 0 5px currentColor;
+    }
+
+    .social-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(0, 255, 204, 0.4), transparent);
+      transition: left 0.5s;
+    }
+
+    .social-button:hover::before {
+      left: 100%;
     }
 
     .social-button:hover {
       background-color: #00ffcc;
       color: #0f0f0f;
-      box-shadow: 0 0 10px #00ffcc;
+      box-shadow: 
+        0 0 20px #00ffcc,
+        0 0 40px #00ffcc;
+      transform: translateY(-2px);
+    }
+
+    /* Scanning Line */
+    .scan-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #00ffcc, transparent);
+      animation: scan 3s linear infinite;
+      z-index: 100;
+    }
+
+    @keyframes scan {
+      0% { top: 0%; }
+      100% { top: 100%; }
+    }
+
+    /* Particle Background */
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    .particle {
+      position: absolute;
+      background: #00ffcc;
+      border-radius: 50%;
+      animation: particle-float linear infinite;
+    }
+
+    @keyframes particle-float {
+      to { transform: translateY(-100vh); }
     }
   </style>
 </head>
 <body>
+  <!-- Background Elements -->
+  <div class="grid-bg"></div>
+  <div class="scan-line"></div>
+  <div class="particles" id="particles"></div>
 
   <div class="typewriter-container">
-    <div class="typewriter">Hey, I'm Erfan. Welcome to my website!</div>
+    <div class="glitch-container">
+      <div class="typewriter glitch" data-text="Hey, I'm Erfan. Welcome to my website!">
+        Hey, I'm Erfan. Welcome to my website!
+      </div>
+    </div>
   </div>
 
   <img src="myPic.png" alt="Erfan's Photo" class="profile-pic">
@@ -98,5 +263,81 @@
     <a href="https://t.me/yourusername" class="social-button" target="_blank">Telegram</a>
   </div>
 
+  <script>
+    // Create floating particles
+    function createParticles() {
+      const particlesContainer = document.getElementById('particles');
+      const particleCount = 50;
+      
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        const size = Math.random() * 3 + 1;
+        const posX = Math.random() * 100;
+        const duration = Math.random() * 10 + 5;
+        const delay = Math.random() * 5;
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${posX}vw`;
+        particle.style.animationDuration = `${duration}s`;
+        particle.style.animationDelay = `${delay}s`;
+        particle.style.opacity = Math.random() * 0.5 + 0.1;
+        
+        particlesContainer.appendChild(particle);
+      }
+    }
+
+    // Matrix rain effect (optional)
+    function matrixRain() {
+      const chars = "01アイウエオカキクケコ";
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      
+      canvas.style.position = 'fixed';
+      canvas.style.top = '0';
+      canvas.style.left = '0';
+      canvas.style.zIndex = '-1';
+      document.body.appendChild(canvas);
+      
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      
+      resize();
+      window.addEventListener('resize', resize);
+      
+      const fontSize = 14;
+      const columns = canvas.width / fontSize;
+      const drops = Array(Math.floor(columns)).fill(1);
+      
+      function draw() {
+        ctx.fillStyle = 'rgba(15, 15, 15, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#00ffcc';
+        ctx.font = `${fontSize}px monospace`;
+        
+        for (let i = 0; i < drops.length; i++) {
+          const text = chars[Math.floor(Math.random() * chars.length)];
+          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+          
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          drops[i]++;
+        }
+      }
+      
+      setInterval(draw, 33);
+    }
+
+    // Initialize effects
+    createParticles();
+    // Uncomment the line below for Matrix rain (can be heavy on performance)
+    // matrixRain();
+  </script>
 </body>
 </html>
