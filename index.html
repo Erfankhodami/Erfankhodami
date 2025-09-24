@@ -39,6 +39,27 @@
       100% { transform: translate(50px, 50px); }
     }
 
+    /* Typewriter Container */
+    .typewriter-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      position: relative;
+      height: 120px; /* Fixed height to prevent layout shift */
+    }
+
+    .typewriter {
+      font-size: 1.8em;
+      text-shadow: 0 0 10px #00ffcc;
+      border-right: .15em solid #00ffcc;
+      padding-right: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      min-height: 1.2em;
+      display: inline-block;
+    }
+
     /* Glitch Effect */
     .glitch-container {
       position: relative;
@@ -47,7 +68,6 @@
 
     .glitch {
       position: relative;
-      animation: glitch-skew 4s infinite linear alternate-reverse;
     }
 
     .glitch::before,
@@ -58,6 +78,7 @@
       left: 0;
       width: 100%;
       height: 100%;
+      opacity: 0;
     }
 
     .glitch::before {
@@ -70,6 +91,11 @@
       animation: glitch-2 0.5s infinite linear alternate-reverse;
       color: #00ffff;
       z-index: -2;
+    }
+
+    .glitch:hover::before,
+    .glitch:hover::after {
+      opacity: 0.7;
     }
 
     @keyframes glitch-1 {
@@ -88,37 +114,6 @@
       60% { transform: translate(-2px, 2px); }
       80% { transform: translate(-2px, -2px); }
       100% { transform: translate(0); }
-    }
-
-    /* Enhanced Typewriter */
-    .typewriter-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-      position: relative;
-    }
-
-    .typewriter {
-      overflow: hidden;
-      border-right: .15em solid #00ffcc;
-      white-space: nowrap;
-      margin: 0 auto;
-      animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
-      font-size: 1.8em;
-      max-width: max-content;
-      text-shadow: 0 0 10px #00ffcc;
-      position: relative;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: #00ffcc }
     }
 
     /* Holographic Profile Pic */
@@ -262,9 +257,7 @@
 
   <div class="typewriter-container">
     <div class="glitch-container">
-      <div class="typewriter glitch" data-text="Hey, I'm Erfan. Welcome to my website!">
-        Hey, I'm Erfan. Welcome to my website!
-      </div>
+      <div id="typewriter" class="typewriter glitch" data-text=""></div>
     </div>
   </div>
 
@@ -279,11 +272,79 @@
   </div>
 
   <script>
-    
-    // Create floating particles (FIXED VERSION)
+    // Cycling Typewriter Script
+    class Typewriter {
+      constructor(element, phrases, typingSpeed = 100, deletingSpeed = 50, pauseTime = 2000) {
+        this.element = element;
+        this.phrases = phrases;
+        this.typingSpeed = typingSpeed;
+        this.deletingSpeed = deletingSpeed;
+        this.pauseTime = pauseTime;
+        this.currentPhraseIndex = 0;
+        this.currentText = '';
+        this.isDeleting = false;
+        this.isPaused = false;
+        
+        this.type();
+      }
+      
+      type() {
+        const currentPhrase = this.phrases[this.currentPhraseIndex];
+        
+        if (this.isDeleting) {
+          // Deleting text
+          this.currentText = currentPhrase.substring(0, this.currentText.length - 1);
+        } else {
+          // Typing text
+          this.currentText = currentPhrase.substring(0, this.currentText.length + 1);
+        }
+        
+        this.element.textContent = this.currentText;
+        this.element.setAttribute('data-text', this.currentText);
+        
+        let typeSpeed = this.typingSpeed;
+        
+        if (this.isDeleting) {
+          typeSpeed = this.deletingSpeed;
+        }
+        
+        if (!this.isDeleting && this.currentText === currentPhrase) {
+          // Finished typing, pause then start deleting
+          typeSpeed = this.pauseTime;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.currentText === '') {
+          // Finished deleting, move to next phrase
+          this.isDeleting = false;
+          this.currentPhraseIndex = (this.currentPhraseIndex + 1) % this.phrases.length;
+          typeSpeed = 500; // Brief pause before typing next phrase
+        }
+        
+        setTimeout(() => this.type(), typeSpeed);
+      }
+    }
+
+    // Phrases to cycle through
+    const phrases = [
+      "Hey, I'm Erfan",
+      "Welcome to my website.",
+      "I'm a college student.",
+      "Trying to do Game Development.",
+      "Hope you like this!"
+    ];
+
+    // Initialize typewriter when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      const typewriterElement = document.getElementById('typewriter');
+      new Typewriter(typewriterElement, phrases, 100, 50, 2000);
+      
+      // Start particle system
+      startParticleSystem();
+    });
+
+    // Particle System
     function createParticles() {
       const particlesContainer = document.getElementById('particles');
-      const particleCount = 30; // Reduced for better performance
+      const particleCount = 30;
       
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
@@ -291,13 +352,13 @@
         
         const size = Math.random() * 3 + 1;
         const posX = Math.random() * 100;
-        const duration = Math.random() * 8 + 4; // 4-12 seconds
-        const delay = Math.random() * 5;
+        const duration = Math.random() * 8 + 4;
+        const delay = 0;
         
         particle.style.width = `${size}px`;
         particle.style.height = `${size}px`;
         particle.style.left = `${posX}vw`;
-        particle.style.bottom = '0px'; // Start from bottom
+        particle.style.bottom = '0px';
         particle.style.animationDuration = `${duration}s`;
         particle.style.animationDelay = `${delay}s`;
         particle.style.opacity = Math.random() * 0.7 + 0.3;
@@ -313,42 +374,10 @@
       }
     }
 
-    
     function startParticleSystem() {
       createParticles();
-      // Create new batch of particles every 2 seconds
       setInterval(createParticles, 2000);
     }
-
-    // Initialize effects when page loads
-    document.addEventListener('DOMContentLoaded', function() {
-      startParticleSystem();
-    });
-
-    /*
-    // Alternative simpler particle system (uncomment if above is too heavy)
-    
-    function createSimpleParticles() {
-      const particlesContainer = document.getElementById('particles');
-      setInterval(() => {
-        const particle = document.createElement('div');
-        particle.classList.add('particle');
-        
-        particle.style.left = Math.random() * 100 + 'vw';
-        particle.style.animationDuration = (Math.random() * 5 + 3) + 's';
-        particle.style.opacity = Math.random() * 0.5 + 0.2;
-        particle.style.width = particle.style.height = (Math.random() * 2 + 1) + 'px';
-        
-        particlesContainer.appendChild(particle);
-        
-        setTimeout(() => {
-          if (particle.parentNode) {
-            particle.remove();
-          }
-        }, 8000);
-      }, 100);
-    }
-    */
   </script>
 </body>
 </html>
