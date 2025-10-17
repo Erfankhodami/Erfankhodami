@@ -1,0 +1,13 @@
+net stop wuauserv
+net stop cryptSvc
+net stop bits
+net stop msiserver
+ren C:\Windows\SoftwareDistribution SoftwareDistribution2024
+ren C:\Windows\System32\catroot2 catroot22024
+sc.exe config wuauserv start=auto
+net start wuauserv
+sc.exe config cryptsvc start=auto
+net start cryptSvc
+sc.exe config bits start=auto
+net start bits
+net start msiserver
