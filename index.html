@@ -1,383 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Erfan's Dev Portal</title>
-  <style>
-    body {
-      background-color: #0f0f0f;
-      color: #00ffcc;
-      font-family: 'Courier New', monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      overflow: hidden;
-      text-align: center;
-      position: relative;
-    }
+    <meta charset="UTF-8">
+    <title>Resume - Computer Engineering Internship</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm 15mm;
+            background-color: #ffffff;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
 
-    /* Animated Grid Background */
-    .grid-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: 
-        linear-gradient(rgba(0, 255, 204, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 255, 204, 0.1) 1px, transparent 1px);
-      background-size: 50px 50px;
-      animation: gridMove 20s linear infinite;
-      z-index: -1;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #2b2d42;
+            background-color: #ffffff;
+            font-size: 10pt;
+            line-height: 1.35;
+        }
 
-    @keyframes gridMove {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(50px, 50px); }
-    }
+        .header {
+            margin-bottom: 16px;
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 8px;
+        }
 
-    /* Typewriter Container */
-    .typewriter-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-      position: relative;
-      height: 120px; /* Fixed height to prevent layout shift */
-    }
+        .name {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #1a365d;
+            margin: 0 0 2px 0;
+            letter-spacing: -0.5px;
+        }
 
-    .typewriter {
-      font-size: 1.8em;
-      text-shadow: 0 0 10px #00ffcc;
-      border-right: .15em solid #00ffcc;
-      padding-right: 5px;
-      white-space: nowrap;
-      overflow: hidden;
-      min-height: 1.2em;
-      display: inline-block;
-    }
+        .title {
+            font-size: 11.5pt;
+            color: #4a5568;
+            font-weight: 600;
+            margin: 0 0 6px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-    /* Glitch Effect */
-    .glitch-container {
-      position: relative;
-      display: inline-block;
-    }
+        .contact-info {
+            font-size: 9pt;
+            color: #4a5568;
+            margin: 0;
+        }
 
-    .glitch {
-      position: relative;
-    }
+        .contact-info span {
+            margin-right: 14px;
+        }
 
-    .glitch::before,
-    .glitch::after {
-      content: attr(data-text);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-    }
+        .contact-info a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
 
-    .glitch::before {
-      animation: glitch-1 0.5s infinite linear alternate-reverse;
-      color: #ff00ff;
-      z-index: -1;
-    }
+        .section {
+            margin-bottom: 14px;
+            page-break-inside: avoid;
+        }
 
-    .glitch::after {
-      animation: glitch-2 0.5s infinite linear alternate-reverse;
-      color: #00ffff;
-      z-index: -2;
-    }
+        .section-title {
+            font-size: 11.5pt;
+            font-weight: bold;
+            color: #1a365d;
+            text-transform: uppercase;
+            margin: 0 0 8px 0;
+            letter-spacing: 0.5px;
+            border-left: 3.5px solid #2b6cb0;
+            padding-left: 6px;
+            page-break-after: avoid;
+        }
 
-    .glitch:hover::before,
-    .glitch:hover::after {
-      opacity: 0.7;
-    }
+        p.summary-text {
+            margin: 0;
+            text-align: justify;
+            color: #2d3748;
+        }
 
-    @keyframes glitch-1 {
-      0% { transform: translate(0); }
-      20% { transform: translate(-2px, 2px); }
-      40% { transform: translate(-2px, -2px); }
-      60% { transform: translate(2px, 2px); }
-      80% { transform: translate(2px, -2px); }
-      100% { transform: translate(0); }
-    }
+        .item {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+        }
 
-    @keyframes glitch-2 {
-      0% { transform: translate(0); }
-      20% { transform: translate(2px, 2px); }
-      40% { transform: translate(2px, -2px); }
-      60% { transform: translate(-2px, 2px); }
-      80% { transform: translate(-2px, -2px); }
-      100% { transform: translate(0); }
-    }
+        .item:last-child {
+            margin-bottom: 0;
+        }
 
-    /* Holographic Profile Pic */
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 3px solid #00ffcc;
-      margin-bottom: 30px;
-      object-fit: cover;
-      position: relative;
-      animation: float 6s ease-in-out infinite;
-      box-shadow: 
-        0 0 20px #00ffcc,
-        inset 0 0 20px rgba(0, 255, 204, 0.3);
-      filter: hue-rotate(0deg);
-      transition: all 0.3s ease;
-    }
+        .item-header {
+            display: table;
+            width: 100%;
+            margin-bottom: 2px;
+        }
 
-    .profile-pic:hover {
-      filter: hue-rotate(90deg);
-      box-shadow: 
-        0 0 30px #ff00ff,
-        inset 0 0 30px rgba(255, 0, 255, 0.3);
-    }
+        .item-title-cell {
+            display: table-cell;
+            text-align: left;
+            font-weight: bold;
+            color: #2d3748;
+        }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-10px) rotate(1deg); }
-    }
+        .item-date-cell {
+            display: table-cell;
+            text-align: right;
+            color: #718096;
+            font-size: 9pt;
+            font-weight: 500;
+        }
 
-    /* Cyber Buttons */
-    .button-container {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-      max-width: 600px;
-      position: relative;
-    }
+        .item-subtitle {
+            font-style: italic;
+            color: #4a5568;
+            margin: 0 0 2px 0;
+            font-size: 9.5pt;
+        }
 
-    .social-button {
-      background-color: transparent;
-      border: 2px solid #00ffcc;
-      color: #00ffcc;
-      padding: 12px 24px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      flex: 1;
-      min-width: 120px;
-      position: relative;
-      overflow: hidden;
-      text-shadow: 0 0 5px currentColor;
-    }
+        ul {
+            margin: 0;
+            padding-left: 18px;
+            color: #2d3748;
+        }
 
-    .social-button::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(0, 255, 204, 0.4), transparent);
-      transition: left 0.5s;
-    }
+        li {
+            margin-bottom: 2px;
+        }
 
-    .social-button:hover::before {
-      left: 100%;
-    }
+        li:last-child {
+            margin-bottom: 0;
+        }
 
-    .social-button:hover {
-      background-color: #00ffcc;
-      color: #0f0f0f;
-      box-shadow: 
-        0 0 20px #00ffcc,
-        0 0 40px #00ffcc;
-      transform: translateY(-2px);
-    }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2px;
+        }
 
-    /* Scanning Line */
-    .scan-line {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #00ffcc, transparent);
-      animation: scan 3s linear infinite;
-      z-index: 100;
-    }
+        .skills-table td {
+            padding: 4px 0;
+            vertical-align: top;
+            border-bottom: 1px solid #edf2f7;
+        }
 
-    @keyframes scan {
-      0% { top: 0%; }
-      100% { top: 100%; }
-    }
+        .skills-table tr:last-child td {
+            border-bottom: none;
+        }
 
-    /* Fixed Particle Styles */
-    .particles {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -2;
-      pointer-events: none;
-    }
+        .skill-category {
+            font-weight: bold;
+            color: #2d3748;
+            width: 25%;
+        }
 
-    .particle {
-      position: absolute;
-      background: #00ffcc;
-      border-radius: 50%;
-      animation: particle-float linear infinite;
-      pointer-events: none;
-    }
-
-    @keyframes particle-float {
-      0% {
-        transform: translateY(100vh) translateX(0px);
-        opacity: 0;
-      }
-      10% {
-        opacity: 1;
-      }
-      90% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-100px) translateX(20px);
-        opacity: 0;
-      }
-    }
-  </style>
+        .skill-list {
+            color: #4a5568;
+            width: 75%;
+        }
+    </style>
 </head>
 <body>
-  <!-- Background Elements -->
-  <div class="grid-bg"></div>
-  <div class="scan-line"></div>
-  <div class="particles" id="particles"></div>
 
-  <div class="typewriter-container">
-    <div class="glitch-container">
-      <div id="typewriter" class="typewriter glitch" data-text=""></div>
+    <div class="header">
+        <h1 class="name">[Your Full Name]</h1>
+        <div class="title">Computer Engineering Undergraduate | Software &amp; Game Developer</div>
+        <div class="contact-info">
+            <span>[City, Country]</span>
+            <span>[Your Phone Number]</span>
+            <span><a href="mailto:[Your Email Address]">[Your Email Address]</a></span>
+            <br style="margin-bottom: 2px;">
+            <span><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/[username]</a></span>
+            <span><strong>GitHub:</strong> <a href="#">github.com/[username]</a></span>
+            <span><strong>Portfolio:</strong> <a href="#">portfolio-link.com</a></span>
+        </div>
     </div>
-  </div>
 
-  <img src="mypic.png" alt="Erfan's Photo" class="profile-pic">
+    <div class="section">
+        <h2 class="section-title">Objective &amp; Summary</h2>
+        <p class="summary-text">
+            Energetic 4th-semester Computer Engineering student seeking a software development or game engineering internship. Highly adaptable team player with practical experience collaborating in multiple fast-paced game jams and designing structured software layouts. Eager to contribute foundational skills in software engineering, OOP, and professional programming to real-world team environments.
+        </p>
+    </div>
 
-  <div class="button-container">
-    <a href="https://github.com/Erfankhodami" class="social-button" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/erfan-khodami-669b9a244/" class="social-button" target="_blank">LinkedIn</a>
-    <a href="https://erfan-khodami.itch.io/" class="social-button" target="_blank">itch.io</a>
-    <a href="https://www.instagram.com/thisis_efi_erfan" class="social-button" target="_blank">Instagram</a>
-    <a href="https://t.me/thisiz_erfan" class="social-button" target="_blank">Telegram</a>
-  </div>
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title-cell">University of Isfahan</div>
+                <div class="item-date-cell">Expected 2028</div>
+            </div>
+            <div class="item-subtitle">Bachelor of Science in Computer Engineering (Current 4th-Semester Student)</div>
+        </div>
+    </div>
 
-  <script>
-    // Cycling Typewriter Script
-    class Typewriter {
-      constructor(element, phrases, typingSpeed = 100, deletingSpeed = 50, pauseTime = 2000) {
-        this.element = element;
-        this.phrases = phrases;
-        this.typingSpeed = typingSpeed;
-        this.deletingSpeed = deletingSpeed;
-        this.pauseTime = pauseTime;
-        this.currentPhraseIndex = 0;
-        this.currentText = '';
-        this.isDeleting = false;
-        this.isPaused = false;
-        
-        this.type();
-      }
-      
-      type() {
-        const currentPhrase = this.phrases[this.currentPhraseIndex];
-        
-        if (this.isDeleting) {
-          // Deleting text
-          this.currentText = currentPhrase.substring(0, this.currentText.length - 1);
-        } else {
-          // Typing text
-          this.currentText = currentPhrase.substring(0, this.currentText.length + 1);
-        }
-        
-        this.element.textContent = this.currentText;
-        this.element.setAttribute('data-text', this.currentText);
-        
-        let typeSpeed = this.typingSpeed;
-        
-        if (this.isDeleting) {
-          typeSpeed = this.deletingSpeed;
-        }
-        
-        if (!this.isDeleting && this.currentText === currentPhrase) {
-          // Finished typing, pause then start deleting
-          typeSpeed = this.pauseTime;
-          this.isDeleting = true;
-        } else if (this.isDeleting && this.currentText === '') {
-          // Finished deleting, move to next phrase
-          this.isDeleting = false;
-          this.currentPhraseIndex = (this.currentPhraseIndex + 1) % this.phrases.length;
-          typeSpeed = 500; // Brief pause before typing next phrase
-        }
-        
-        setTimeout(() => this.type(), typeSpeed);
-      }
-    }
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <table class="skills-table">
+            <tr>
+                <td class="skill-category">Languages</td>
+                <td class="skill-list">C#, C (Professional), Rust (Mid-level), Python, Java, VHDL</td>
+            </tr>
+            <tr>
+                <td class="skill-category">Software Design</td>
+                <td class="skill-list">Object-Oriented Programming (OOP), Software Design Principles, Architectural Layouts</td>
+            </tr>
+            <tr>
+                <td class="skill-category">Tools &amp; Graphics</td>
+                <td class="skill-list">Git, GitHub, JetBrains Rider, Unity Engine, Cinemachine, 2D/3D Animation</td>
+            </tr>
+        </table>
+    </div>
 
-    // Phrases to cycle through
-    const phrases = [
-      "Hey, I'm Erfan",
-      "Welcome to my website.",
-      "I'm a college student.",
-      "Trying to do Game Development.",
-      "Hope you like this!"
-    ];
+    <div class="section">
+        <h2 class="section-title">Key Projects &amp; Team Experience</h2>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title-cell">Game Jam Competitor (3 Editions)</div>
+                <div class="item-date-cell">Project-based</div>
+            </div>
+            <ul>
+                <li>Collaborated with three distinct, cross-functional teams to build and script playable games under strict deadlines.</li>
+                <li>Implemented game mechanics and structured logical scripts using C# and professional version control tools.</li>
+            </ul>
+        </div>
 
-    // Initialize typewriter when page loads
-    document.addEventListener('DOMContentLoaded', function() {
-      const typewriterElement = document.getElementById('typewriter');
-      new Typewriter(typewriterElement, phrases, 100, 50, 2000);
-      
-      // Start particle system
-      startParticleSystem();
-    });
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title-cell">Software System Architecture &amp; Design Layouts</div>
+                <div class="item-date-cell">Academic / Personal</div>
+            </div>
+            <ul>
+                <li>Designed high-level layouts and applied core design patterns to create structured, scalable system architectures.</li>
+            </ul>
+        </div>
+    </div>
 
-    // Particle System
-    function createParticles() {
-      const particlesContainer = document.getElementById('particles');
-      const particleCount = 30;
-      
-      for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.classList.add('particle');
-        
-        const size = Math.random() * 3 + 1;
-        const posX = Math.random() * 100;
-        const duration = Math.random() * 8 + 4;
-        const delay = 0;
-        
-        particle.style.width = `${size}px`;
-        particle.style.height = `${size}px`;
-        particle.style.left = `${posX}vw`;
-        particle.style.bottom = '0px';
-        particle.style.animationDuration = `${duration}s`;
-        particle.style.animationDelay = `${delay}s`;
-        particle.style.opacity = Math.random() * 0.7 + 0.3;
-        
-        particlesContainer.appendChild(particle);
-        
-        // Remove particle after animation completes
-        setTimeout(() => {
-          if (particle.parentNode === particlesContainer) {
-            particlesContainer.removeChild(particle);
-          }
-        }, (duration + delay) * 1000);
-      }
-    }
+    <div class="section">
+        <h2 class="section-title">Experience History</h2>
 
-    function startParticleSystem() {
-      createParticles();
-      setInterval(createParticles, 2000);
-    }
-  </script>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title-cell">Freelance Game Developer</div>
+                <div class="item-date-cell">Contract</div>
+            </div>
+            <ul>
+                <li>Built independent gameplay mechanics and translated contract requirements into working features.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title-cell">DOM Studio</div>
+                <div class="item-date-cell">Contract</div>
+            </div>
+            <div class="item-subtitle">Animator</div>
+            <ul>
+                <li>Cooperated in a creative team pipeline to synchronize digital animation workflows.</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
