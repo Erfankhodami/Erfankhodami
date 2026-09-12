@@ -64,9 +64,7 @@
 ## <h2 align="center" style="color: #FF5733; text-shadow: 2px 2px 0px #33FFEC, 4px 4px 0px #1F222E;">🎯 Goals</h2>
 
 <div align="center">
-🚀 Build and lead a small indie dev team<br>
-🎮 Release creative games on Itch.io<br>
-🌱 Keep learning and improving
+STAY ALIVE!
 </div>
 
 <div align="center">
