@@ -1,7 +1,7 @@
 <div align="center">
   <!-- Centered Main Title with Typewriter Effect -->
   <h1>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=4000&pause=1000&color=007ACC&center=true&vCenter=true&width=600&lines=Hi,+I'm+Erfan!;Software+Engineer;Backend+&+AI+Integrations;Computer+Engineering+Student" alt="Animated Title" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=4000&pause=1000&color=007ACC&center=true&vCenter=true&width=600&lines=Hi,+I'm+Erfan!;I'm+a+Software+Developer;Doing+Backend+and+AI+Integrations;Computer+Engineering+Student" alt="Animated Title" />
   </h1>
   
   <!-- Avatar -->
@@ -11,7 +11,7 @@
 ## <h2 align="center" style="color: #007ACC; text-shadow: 2px 2px 0px #C1C1C1;">🚀 About Me</h2>
 
 <div align="center">
-📖 4th-semester <strong>Computer Engineering</strong> student at the <strong>University of Isfahan</strong>.<br>
+📖 I'm an student of <strong>Computer Engineering</strong> student at the <strong>University of Isfahan</strong>.<br>
 💻 Specializing in <strong>Backend Architecture</strong>, REST APIs, and integrating local LLMs (RAG pipelines).<br>
 🏗️ Currently focused exclusively on building smart, scalable institutional software.<br>
 ☕ Fueled by dialled-in espresso shots.<br>
