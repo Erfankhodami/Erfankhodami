@@ -1,270 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Resume - Computer Engineering Internship</title>
-    <style>
-        @page {
-            size: A4;
-            margin: 15mm 15mm;
-            background-color: #ffffff;
-        }
-        
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seyed Mohammad Erfan Khoddami | Resume</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-soft: rgba(88, 166, 255, 0.12);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            color: #2b2d42;
-            background-color: #ffffff;
-            font-size: 10pt;
-            line-height: 1.35;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .header {
-            margin-bottom: 16px;
-            border-bottom: 2px solid #1a365d;
-            padding-bottom: 8px;
-        }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      padding: 2.5rem 1.25rem;
+    }
 
-        .name {
-            font-size: 22pt;
-            font-weight: bold;
-            color: #1a365d;
-            margin: 0 0 2px 0;
-            letter-spacing: -0.5px;
-        }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+    }
 
-        .title {
-            font-size: 11.5pt;
-            color: #4a5568;
-            font-weight: 600;
-            margin: 0 0 6px 0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.75rem;
+      margin-bottom: 2rem;
+    }
 
-        .contact-info {
-            font-size: 9pt;
-            color: #4a5568;
-            margin: 0;
-        }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
 
-        .contact-info span {
-            margin-right: 14px;
-        }
+    .subtitle {
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
 
-        .contact-info a {
-            color: #2b6cb0;
-            text-decoration: none;
-        }
+    .bio {
+      color: var(--text-muted);
+      max-width: 680px;
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
 
-        .section {
-            margin-bottom: 14px;
-            page-break-inside: avoid;
-        }
+    /* Social Links */
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
 
-        .section-title {
-            font-size: 11.5pt;
-            font-weight: bold;
-            color: #1a365d;
-            text-transform: uppercase;
-            margin: 0 0 8px 0;
-            letter-spacing: 0.5px;
-            border-left: 3.5px solid #2b6cb0;
-            padding-left: 6px;
-            page-break-after: avoid;
-        }
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.85rem;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      transition: border-color 0.2s, background-color 0.2s, transform 0.15s;
+    }
 
-        p.summary-text {
-            margin: 0;
-            text-align: justify;
-            color: #2d3748;
-        }
+    .social-btn:hover {
+      border-color: var(--accent);
+      background-color: var(--accent-soft);
+      transform: translateY(-1px);
+    }
 
-        .item {
-            margin-bottom: 8px;
-            page-break-inside: avoid;
-        }
+    .social-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
 
-        .item:last-child {
-            margin-bottom: 0;
-        }
+    /* Sections */
+    section {
+      margin-bottom: 2.25rem;
+    }
 
-        .item-header {
-            display: table;
-            width: 100%;
-            margin-bottom: 2px;
-        }
+    h2 {
+      font-size: 1.1rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
 
-        .item-title-cell {
-            display: table-cell;
-            text-align: left;
-            font-weight: bold;
-            color: #2d3748;
-        }
+    h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
 
-        .item-date-cell {
-            display: table-cell;
-            text-align: right;
-            color: #718096;
-            font-size: 9pt;
-            font-weight: 500;
-        }
+    /* Cards & Items */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
 
-        .item-subtitle {
-            font-style: italic;
-            color: #4a5568;
-            margin: 0 0 2px 0;
-            font-size: 9.5pt;
-        }
+    @media (min-width: 680px) {
+      .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-        ul {
-            margin: 0;
-            padding-left: 18px;
-            color: #2d3748;
-        }
+    .card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
 
-        li {
-            margin-bottom: 2px;
-        }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+    }
 
-        li:last-child {
-            margin-bottom: 0;
-        }
+    .item-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
 
-        .skills-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 2px;
-        }
+    .item-org {
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
 
-        .skills-table td {
-            padding: 4px 0;
-            vertical-align: top;
-            border-bottom: 1px solid #edf2f7;
-        }
+    .item-meta {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
 
-        .skills-table tr:last-child td {
-            border-bottom: none;
-        }
+    .item-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
 
-        .skill-category {
-            font-weight: bold;
-            color: #2d3748;
-            width: 25%;
-        }
+    ul.bullets {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
 
-        .skill-list {
-            color: #4a5568;
-            width: 75%;
-        }
-    </style>
+    ul.bullets li {
+      position: relative;
+      padding-left: 1rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+
+    ul.bullets li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    /* Tags */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.85rem;
+    }
+
+    .tag {
+      background-color: var(--accent-soft);
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+    }
+
+    .skill-group h3 {
+      font-size: 0.9rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Print friendly */
+    @media print {
+      :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --border: #d0d7de;
+        --text: #1f2328;
+        --text-muted: #57606a;
+        --accent: #0969da;
+        --accent-soft: #f6f8fa;
+      }
+      body {
+        padding: 0;
+      }
+      .card {
+        break-inside: avoid;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1 class="name">[Your Full Name]</h1>
-        <div class="title">Computer Engineering Undergraduate | Software &amp; Game Developer</div>
-        <div class="contact-info">
-            <span>[City, Country]</span>
-            <span>[Your Phone Number]</span>
-            <span><a href="mailto:[Your Email Address]">[Your Email Address]</a></span>
-            <br style="margin-bottom: 2px;">
-            <span><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/[username]</a></span>
-            <span><strong>GitHub:</strong> <a href="#">github.com/[username]</a></span>
-            <span><strong>Portfolio:</strong> <a href="#">portfolio-link.com</a></span>
+  <main class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>Erfan Khoddami</h1>
+      <div class="subtitle">Software Engineer • Backend & Systems • Game Dev & Robotics</div>
+      <p class="bio">
+        Computer Engineering undergraduate at the University of Isfahan building modular backend architectures, self-hosted AI/RAG systems, neural simulations, and interactive hardware-software mechanisms.
+      </p>
+
+      <!-- SOCIAL LINKS: Replace href="#" with your profile links -->
+      <nav class="social-links" aria-label="Social Platforms">
+        <a href="https://github.com/Erfankhodami" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/Erfankhodami" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          LinkedIn
+        </a>
+
+        <a href="https://Erfankhodami.itch.io" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M3.13 1.338C2.08 1.96 1.2 3.19 1.2 4.39v1.03c0 1.44 1.18 2.66 2.63 2.66 1.48 0 2.68-1.22 2.68-2.66 0 1.44 1.18 2.66 2.66 2.66 1.46 0 2.65-1.22 2.65-2.66 0 1.44 1.2 2.66 2.68 2.66 1.48 0 2.66-1.22 2.66-2.66 0 1.44 1.2 2.66 2.68 2.66 1.45 0 2.63-1.22 2.63-2.66V4.39c0-1.2-.88-2.43-1.93-3.052C19.16.92 15.6.9 12 .9c-3.6 0-7.16.02-8.87.438zM3.8 9.54v9.96c0 1.93 1.57 3.5 3.5 3.5h9.4c1.93 0 3.5-1.57 3.5-3.5V9.54c-.88.38-1.88.58-2.92.58-1.48 0-2.82-.54-3.8-1.42-.98.88-2.32 1.42-3.8 1.42-1.48 0-2.82-.54-3.8-1.42-.98.88-2.32 1.42-3.8 1.42-1.04 0-2.04-.2-2.92-.58zm5.7 3.36h5v5.5h-5v-5.5z"/></svg>
+          itch.io
+        </a>
+
+        <a href="https://t.me/Thisiz_Erfan" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Telegram
+        </a>
+
+        <a href="mailto: khodami.erfan@gmail.com" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+      </nav>
+    </header>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Technical Stack</h2>
+      <div class="grid grid-2">
+        <div class="card skill-group">
+          <h3>Languages & Core</h3>
+          <div class="tags">
+            <span class="tag">C++</span>
+            <span class="tag">Rust</span>
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">C#</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">SQL</span>
+          </div>
         </div>
-    </div>
+        <div class="card skill-group">
+          <h3>Backend, Web & DevOps</h3>
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Linux (Debian / Arch)</span>
+          </div>
+        </div>
+        <div class="card skill-group">
+          <h3>Data, AI & Simulation</h3>
+          <div class="tags">
+            <span class="tag">PostgreSQL (pgvector)</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Qdrant</span>
+            <span class="tag">Ollama (Local RAG)</span>
+            <span class="tag">PyGeNN / Brian2</span>
+            <span class="tag">OpenCV / MediaPipe</span>
+          </div>
+        </div>
+        <div class="card skill-group">
+          <h3>Game Dev & Hardware</h3>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Proteus / Logisim</span>
+            <span class="tag">SolidWorks</span>
+            <span class="tag">Blender</span>
+            <span class="tag">3D Printing (Cura)</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="section">
-        <h2 class="section-title">Objective &amp; Summary</h2>
-        <p class="summary-text">
-            Energetic 4th-semester Computer Engineering student seeking a software development or game engineering internship. Highly adaptable team player with practical experience collaborating in multiple fast-paced game jams and designing structured software layouts. Eager to contribute foundational skills in software engineering, OOP, and professional programming to real-world team environments.
-        </p>
-    </div>
+    <!-- FEATURED PROJECTS -->
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="item-header">
+            <span class="item-title">Smart University Faculty Kiosk</span>
+            <span class="item-meta">University of Isfahan</span>
+          </div>
+          <p class="item-desc">
+            Engineered and deployed a full-stack interactive kiosk platform featuring air-gapped local LLM/RAG search, vector indexing, and containerized service orchestration.
+          </p>
+          <div class="tags">
+            <span class="tag">Java Spring Boot</span>
+            <span class="tag">Vite + TypeScript</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Qdrant</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Nginx</span>
+          </div>
+        </div>
 
-    <div class="section">
-        <h2 class="section-title">Education</h2>
-        <div class="item">
-            <div class="item-header">
-                <div class="item-title-cell">University of Isfahan</div>
-                <div class="item-date-cell">Expected 2028</div>
+        <div class="card">
+          <div class="item-header">
+            <span class="item-title">Drosophila Connectome Neural Simulation (fly-brain)</span>
+            <span class="item-meta">Computational Neuroscience</span>
+          </div>
+          <p class="item-desc">
+            Modeled and simulated biological spiking neural sub-networks of the fruit fly brain connectome using GPU-accelerated neural simulation frameworks.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyGeNN</span>
+            <span class="tag">GeNN CUDA</span>
+            <span class="tag">Brian2</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="item-header">
+            <span class="item-title">Animatronic 6-Servo EyeMech Robot</span>
+            <span class="item-meta">Robotics & Computer Vision</span>
+          </div>
+          <p class="item-desc">
+            Designed, 3D-printed, and programmed a 6-axis biomimetic animatronic eye mechanism controlled via serial hardware bridging and real-time computer vision face/hand tracking.
+          </p>
+          <div class="tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">MediaPipe</span>
+            <span class="tag">SolidWorks</span>
+            <span class="tag">PLA 3D Printing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="item-header">
+            <div>
+              <span class="item-title">Backend Developer</span> · <span class="item-org">EPACO</span>
             </div>
-            <div class="item-subtitle">Bachelor of Science in Computer Engineering (Current 4th-Semester Student)</div>
+            <span class="item-meta">2026</span>
+          </div>
+          <ul class="bullets">
+            <li>Developed and containerized backend web services and APIs using Next.js and Docker.</li>
+          </ul>
         </div>
-    </div>
 
-    <div class="section">
-        <h2 class="section-title">Technical Skills</h2>
-        <table class="skills-table">
-            <tr>
-                <td class="skill-category">Languages</td>
-                <td class="skill-list">C#, C (Professional), Rust (Mid-level), Python, Java, VHDL</td>
-            </tr>
-            <tr>
-                <td class="skill-category">Software Design</td>
-                <td class="skill-list">Object-Oriented Programming (OOP), Software Design Principles, Architectural Layouts</td>
-            </tr>
-            <tr>
-                <td class="skill-category">Tools &amp; Graphics</td>
-                <td class="skill-list">Git, GitHub, JetBrains Rider, Unity Engine, Cinemachine, 2D/3D Animation</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Key Projects &amp; Team Experience</h2>
-        
-        <div class="item">
-            <div class="item-header">
-                <div class="item-title-cell">Game Jam Competitor (3 Editions)</div>
-                <div class="item-date-cell">Project-based</div>
+        <div class="card">
+          <div class="item-header">
+            <div>
+              <span class="item-title">Software Development Intern</span> · <span class="item-org">University Knowledge-Based Company</span>
             </div>
-            <ul>
-                <li>Collaborated with three distinct, cross-functional teams to build and script playable games under strict deadlines.</li>
-                <li>Implemented game mechanics and structured logical scripts using C# and professional version control tools.</li>
-            </ul>
+            <span class="item-meta">2026</span>
+          </div>
+          <ul class="bullets">
+            <li>Contributed to production software modules and full-stack feature integration within an agile engineering team.</li>
+          </ul>
         </div>
 
-        <div class="item">
-            <div class="item-header">
-                <div class="item-title-cell">Software System Architecture &amp; Design Layouts</div>
-                <div class="item-date-cell">Academic / Personal</div>
+        <div class="card">
+          <div class="item-header">
+            <div>
+              <span class="item-title">Teaching Assistant — Basic Programming</span> · <span class="item-org">University of Isfahan</span>
             </div>
-            <ul>
-                <li>Designed high-level layouts and applied core design patterns to create structured, scalable system architectures.</li>
-            </ul>
+            <span class="item-meta">2 Semesters</span>
+          </div>
+          <ul class="bullets">
+            <li>Mentored undergraduate students in C++ fundamentals, algorithmic problem-solving, and debugging across two academic terms.</li>
+          </ul>
         </div>
-    </div>
 
-    <div class="section">
-        <h2 class="section-title">Experience History</h2>
-
-        <div class="item">
-            <div class="item-header">
-                <div class="item-title-cell">Freelance Game Developer</div>
-                <div class="item-date-cell">Contract</div>
+        <div class="card">
+          <div class="item-header">
+            <div>
+              <span class="item-title">Freelance Game Developer & Animator</span> · <span class="item-org">Independent / DOM Studio</span>
             </div>
-            <ul>
-                <li>Built independent gameplay mechanics and translated contract requirements into working features.</li>
-            </ul>
+            <span class="item-meta">2025 – 2026</span>
+          </div>
+          <ul class="bullets">
+            <li>Built interactive games in Unity (C#), published jam titles on itch.io, and produced 3D/2D animation assets at DOM Studio.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & HONORS -->
+    <section>
+      <h2>Education & Achievements</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="item-header">
+            <span class="item-title">B.Sc. in Computer Engineering</span>
+          </div>
+          <div class="item-org">University of Isfahan</div>
+          <p class="item-desc">Semester GPA: <strong>17.78 / 20</strong></p>
         </div>
 
-        <div class="item">
-            <div class="item-header">
-                <div class="item-title-cell">DOM Studio</div>
-                <div class="item-date-cell">Contract</div>
-            </div>
-            <div class="item-subtitle">Animator</div>
-            <ul>
-                <li>Cooperated in a creative team pipeline to synchronize digital animation workflows.</li>
-            </ul>
+        <div class="card">
+          <div class="item-header">
+            <span class="item-title">Honors & Community</span>
+          </div>
+          <ul class="bullets">
+            <li><strong>1st Place</strong> — Isfahan Game Making Marathon (2025)</li>
+            <li><strong>Competitive Programming</strong> — UICPC, Charbug, & ACM Weekend Contestant</li>
+            <li><strong>TEDx Staff Member</strong> — Event Operations & Coordination</li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
